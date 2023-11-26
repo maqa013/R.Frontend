@@ -1,0 +1,84 @@
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  body{
+      display: flex;
+      justify-content: center;
+       align-items: center; 
+       flex-direction: column;
+       height: 105vh; 
+    overflow-y: scroll;
+  }
+  
+  form{
+ margin-top: -10px;
+
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+   background: linear-gradient(
+          to bottom right,
+          rgb(167, 75, 253),
+          rgb(51, 51, 247),
+          rgba(0, 212, 255, 1)
+);
+        border: none;
+        position: relative;
+      
+  }
+  
+  
+  label{
+    color: white;
+  }
+  
+  
+  
+  
+  #user{
+width: 195px;
+    border-radius: 10px;
+    border: solid rgb(153, 153, 153);
+    outline: none;
+    margin-top: 10px;
+  margin-bottom: 10px;
+    color: black;
+    
+  }
+
+  #password{
+ width: 195px;
+    margin-top: 10px;
+  }
+  
+
+
+  
+
+
+
+  .btn1{
+    height: 30px;
+    width: 150px;
+    background-color:mediumturquoise;
+    color: white;
+   border-radius: 10px;
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 25px;
+   margin-top: 20px;
+   
+   
+   }

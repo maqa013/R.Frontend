@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+   <link rel="stylesheet" href="computer.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container mt-3">
+<a href="main.html" class="btn btn-warning">Home</a>
+<h1>Computers</h1>
+<button id="addComp" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success my-3">Add Computer</button>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+        <th>ID</th>
+        <th>Mark</th>
+        <th>IMG</th>
+        <th>Price</th>
+        <th>OPTIONS</th>
+    </tr>
+  </thead>
+    <tbody>
+
+   </tbody>
+ 
+</table>
+
+
+
+</div>
+
+
+<div  class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+
+<div class="modal-dialog">
+<div  class="modal-content">
+    <div  class="modal-header">
+      
+        <h1 style="margin-left: 205px;"  class="modal-title fs-5" id="exampleModal"> New</h1>
+      
+       
+   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div  class="modal-body needs-validation" novalidate>
+<div style="display: flex; flex-direction: column; max-width: 200px; " >
+  <label for="mark">Mark:</label>
+  <select  class="form-control place slect1" style="border-radius: 5px;" type="text" id="mark" required>
+  <option value="Asus">Asus</option>
+  <option value="MSI">MSI</option>
+  <option value="Lenova">Lenova</option>
+  <option value="Dell">Dell</option>
+  <option value="LG">LG</option>
+  <option value="HP">HP</option>
+  <option value="Acer">Acer</option>
+  <option value="Casper">Casper</option>
+  <option value="Toshiba">Toshiba</option>
+  <option value="Samsung">Samsung</option>
+  <option value="Sony">Sony</option>
+  <option value="Nexus">Nexus</option>
+  <option value="Fijitsu">Fijitsu</option>
+
+
+  </select>
+  
+</div><br>
+<div class="allInputs1">
+<div style="display: flex; flex-direction: column; max-width: 200px;">
+  <label for="name">Name:</label>
+  <input class="form-control place" style="border-radius: 5px;" type="text" id="name" required>
+  
+</div><br>
+
+<div style="display: flex; flex-direction: column; max-width: 200px;">
+  <label for="price">Price:</label>
+  <input class="form-control place" style="border-radius: 5px;" type="text" id="price" required>
+  
+</div><br>
+
+<div style="display: flex; flex-direction: column; max-width: 200px;">
+  <label for="describe">Describing:</label>
+  <input class="form-control place" style="border-radius: 5px;"  type="text" id="describe" required>
+  
+</div><br>
+
+<div style="display: flex; flex-direction: column; max-width: 200px;">
+  <label for="new">New:</label>
+  <input class="form-control place" style="border-radius: 5px;"  type="text" id="new" required>
+  
+</div><br>
+
+<div style="display: flex; flex-direction: column; max-width: 200px;">
+ <label for="img">Image:</label>
+  <input class="form-control place" style="border-radius: 5px;"  type="text" id="img" required>
+
+  
+</div>
+<img style="width: 100px;" src="" id="modalImg" alt="">
+</div>
+<div style="margin-left: 250px; display: flex; flex-direction: column; position: absolute; top: 16px;" class="allInputs2">
+  <div style="display: flex; flex-direction: column; max-width: 200px;">
+    <label for="storage">Storage(GB):</label>
+    <input class="form-control place" style="border-radius: 5px;"  type="text" id="storage" required>
+    
+  </div><br>
+  <div style="display: flex; flex-direction: column; max-width: 200px;">
+    <label for="cpu">
+      CPU:</label>
+    <input class="form-control place" style="border-radius: 5px;"  type="text" id="cpu" required>
+    
+    </div><br>
+    <div style="display: flex; flex-direction: column; max-width: 200px;">
+      <label for="pm">Permanent memory(GB):</label>
+      <input class="form-control place" style="border-radius: 5px;"  type="text" id="pm" required>
+     
+      </div><br>
+
+      <div style="display: flex; flex-direction: column; max-width: 200px;">
+        <label for="pmt">Permanent memory type:</label>
+        <input class="form-control place" style="border-radius: 5px;"  type="text" id="pmt" required>
+        
+        </div><br>
+
+        <div style="display: flex; flex-direction: column; max-width: 200px;">
+          <label for="os">Operating system:</label>
+          <input class="form-control place" style="border-radius: 5px;"  type="text" id="os" required>
+         
+          </div><br>
+          
+          <div style="display: flex; flex-direction: column; max-width: 200px;">
+            <label for="vc">Video Cart:</label>
+            <input class="form-control place" style="border-radius: 5px;"  type="text" id="vc" required>
+          
+            </div><br>
+</div>
+
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal" >Delete Information</button>
+        <button type="button" data-bs-dismiss="modal" id="save-todo" class="btn btn-primary" >Save changes</button>
+
+    </div>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+<script src="Jquery.js"></script>
+    <script src="computer.js"></script>  
+</body>
+</html>
